@@ -19,7 +19,7 @@
     </properties>
 
     <build>
-        <finalName>cif-ui</finalName>
+        <finalName>cif-ui-4</finalName>
 
         <plugins>
             <plugin>
@@ -31,6 +31,7 @@
     </build>
 
     <dependencies>
+        <!-- Servlet -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -38,6 +39,7 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- JSF API and Mojarra Implementation -->
         <dependency>
             <groupId>javax.faces</groupId>
             <artifactId>javax.faces-api</artifactId>
@@ -50,5 +52,12 @@
             <version>${mojarra.version}</version>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- Primefaces -->
+<!--        <dependency>-->
+<!--            <groupId>org.primefaces</groupId>-->
+<!--            <artifactId>primefaces</artifactId>-->
+<!--            <version>6.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>

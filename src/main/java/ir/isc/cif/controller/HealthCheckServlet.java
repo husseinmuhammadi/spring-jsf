@@ -10,7 +10,9 @@ import java.io.PrintWriter;
 public class HealthCheckServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html; charset=utf-8");
         PrintWriter out = resp.getWriter();
         out.print("Application is running!");
+        out.print("<a href=\"index.xhtml\">Home</a>");
     }
 }
