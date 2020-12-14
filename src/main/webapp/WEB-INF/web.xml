@@ -5,25 +5,24 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>Hello</servlet-name>
-        <servlet-class>ir.isc.cif.controller.HelloServlet</servlet-class>
+        <servlet-name>Health Check</servlet-name>
+        <servlet-class>ir.isc.cif.controller.HealthCheckServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
-        <servlet-name>Hello</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>Health Check</servlet-name>
+        <url-pattern>/health</url-pattern>
     </servlet-mapping>
 
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
 
-<!--    <context-param>-->
-<!--        <param-name>javax.faces.PROJECT_STAGE</param-name>-->
-<!--        <param-value>Development</param-value>-->
-<!--    </context-param>-->
-
-<!--    <context-param>-->
-<!--        <param-name>javax.faces.WEBAPP_RESOURCES_DIRECTORY</param-name>-->
-<!--        <param-value>/WEB-INF/resources</param-value>-->
-<!--    </context-param>-->
+    <context-param>
+        <param-name>javax.faces.WEBAPP_RESOURCES_DIRECTORY</param-name>
+        <param-value>/WEB-INF/resources</param-value>
+    </context-param>
 
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
