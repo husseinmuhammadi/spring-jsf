@@ -19,7 +19,7 @@
     </properties>
 
     <build>
-        <finalName>cif-ui-4</finalName>
+        <finalName>cif-ui-7</finalName>
 
         <plugins>
             <plugin>
@@ -54,10 +54,18 @@
         </dependency>
 
         <!-- Primefaces -->
-<!--        <dependency>-->
-<!--            <groupId>org.primefaces</groupId>-->
-<!--            <artifactId>primefaces</artifactId>-->
-<!--            <version>6.2</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>6.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+
     </dependencies>
 </project>
