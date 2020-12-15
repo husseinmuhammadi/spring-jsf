@@ -9,18 +9,15 @@
     <h:head></h:head>
     <h:body>
         <h:form>
-            <div class="ui-fluid">
-                <div class="p-field">
-                    <p:outputLabel for="firstname1" value="Firstname"/>
-                    <p:inputText id="firstname1"/>
-                </div>
-                <div class="p-field">
-                    <p:outputLabel for="lastname1" value="Lastname"/>
-                    <p:inputText id="lastname1"/>
-                </div>
-            </div>
-
             <p:commandButton value="Search" actionListener="#{cifManager.findAll}" update="cifs">
+
+            </p:commandButton>
+
+            <p:commandButton value="Add" action="insert">
+
+            </p:commandButton>
+
+            <p:commandButton value="Add" action="#{cifController.entry}">
 
             </p:commandButton>
 

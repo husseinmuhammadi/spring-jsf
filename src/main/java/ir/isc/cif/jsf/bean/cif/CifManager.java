@@ -3,13 +3,14 @@ package ir.isc.cif.jsf.bean.cif;
 import ir.isc.cif.dto.CustomerInformationFile;
 import ir.isc.cif.service.CifService;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+import java.io.Serializable;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-@ManagedBean
+@Named
 @RequestScoped
 public class CifManager {
 

@@ -19,7 +19,7 @@
     </properties>
 
     <build>
-        <finalName>cif-ui-7</finalName>
+        <finalName>cif-ui-1008</finalName>
 
         <plugins>
             <plugin>
@@ -35,11 +35,12 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <version>4.0.0</version>
             <scope>provided</scope>
         </dependency>
 
         <!-- JSF API and Mojarra Implementation -->
+        <!--
         <dependency>
             <groupId>javax.faces</groupId>
             <artifactId>javax.faces-api</artifactId>
@@ -52,19 +53,40 @@
             <version>${mojarra.version}</version>
             <scope>runtime</scope>
         </dependency>
+        -->
+
+        <!-- Jakarta EE : required dependencies to deploy on servlet-containers such as Tomcat, Jetty, etc (https://eclipse-ee4j.github.io/mojarra) -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.faces</artifactId>
+            <version>2.3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.weld.servlet</groupId>
+            <artifactId>weld-servlet-shaded</artifactId>
+            <version>3.0.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <dependency> <!-- Optional, only when <f:websocket> is used. -->
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.json</artifactId>
+            <version>1.1.5</version>
+        </dependency>
+        <dependency> <!-- Optional, only when <f:validateBean> or <f:validateWholeBean> is used. -->
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.1.Final</version>
+        </dependency>
 
         <!-- Primefaces -->
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>6.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
-        <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>javax.ws.rs-api</artifactId>
-            <version>2.1.1</version>
         </dependency>
 
     </dependencies>
