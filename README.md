@@ -21,3 +21,9 @@ CifService mockService = mock(CifService.class);
 ## Installation
 To install the project you only need to deploy the war file into running tomcat server
 
+## Specifications
+This project uses frameworks and patterns as below:
+- Servlet: Servlet version 4 to deploy on web container such as apache tomcat 9 or jetty
+- JSF: Jsf version 2.3 using mojarra implementation 
+- CDI: To inject jsf beans we are going to inject them by CDI with weld implementation
+- Mokito: For integration testing with junit and mock the rest api module we will write test methods with mockito
