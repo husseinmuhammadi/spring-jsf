@@ -12,16 +12,16 @@
         <h:form>
             <div class="ui-fluid">
                 <div class="p-field">
-                    <p:outputLabel for="firstname1" value="Firstname"/>
-                    <p:inputText id="firstname1"/>
+                    <p:outputLabel for="cifNo" value="Cif Number"/>
+                    <p:inputText id="cifNo" value="#{cifController.cif.cifNo}"/>
                 </div>
                 <div class="p-field">
-                    <p:outputLabel for="lastname1" value="Lastname"/>
-                    <p:inputText id="lastname1"/>
+                    <p:outputLabel for="customerName" value="CustomerName"/>
+                    <p:inputText id="customerName" value="#{cifController.cif.customerName}"/>
                 </div>
             </div>
 
-            <p:commandButton value="Save" action="index">
+            <p:commandButton value="Save" actionListener="#{cifController.save}" action="index">
 
             </p:commandButton>
         </h:form>
